@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="pkc.css">
+
+<script>
+ function my1(){
+var w= document.getElementById('di1');
+var x= document.getElementById('di2');
+var y= document.getElementById('di3');
+var z= document.getElementById('di4');
+w.style.display="block";
+x.style.display="none";
+y.style.display="none";
+z.style.display="none";
+   }
+function my2(){
+var w= document.getElementById('di1');
+var x= document.getElementById('di2');
+var y= document.getElementById('di3');
+var z= document.getElementById('di4');
+w.style.display="none";
+x.style.display="block";
+y.style.display="none";
+z.style.display="none";
+}
+function my3(){
+var w= document.getElementById('di1');
+var x= document.getElementById('di2');
+var y= document.getElementById('di3');
+var z= document.getElementById('di4');
+w.style.display="none";
+x.style.display="none";
+y.style.display="block";
+z.style.display="none";
+}
+function my4(){
+var w= document.getElementById('di1');
+var x= document.getElementById('di2');
+var y= document.getElementById('di3');
+var z= document.getElementById('di4');
+w.style.display="none";
+x.style.display="none";
+y.style.display="none";
+z.style.display="block";
+}
+function my5(){
+var w= document.getElementById('di1');
+var x= document.getElementById('di2');
+var y= document.getElementById('di3');
+var z= document.getElementById('di4');
+w.style.display="none";
+x.style.display="none";
+y.style.display="none";
+z.style.display="none";
+}
+</script>
+
+ 
+</head>
+
+<body>
+
+
+ <!-- Sidebar -->
+<div class="sidenav input-group" style="width:18%">
+ <h2 style="margin-left: 10%;">Menu</h2>
+
+    <button  class="btn" style="margin-left: 10%" onclick="my1()">Add Menu</button>  <br><br>
+    <button   class="btn"style="margin-left: 10%" onclick="my2()">Add Chef</button><br><br>    
+    <button  class="btn" style="margin-left: 10%" onclick="my3()">Add Table</button>   <br><br> 
+    <button  class="btn" style="margin-left: 10%" onclick="my4()">View feedback</button><br><br>      
+ </div>
+       
+<div  style="margin-left:3%">
+
+                <div style="margin-left: 15%; margin-top: 0%;height: 1.0in;"   class="main">
+                  <b style="margin-left: 45%; padding-top: 1.5%;font-size: 2.5rem; color:black;">Admin</b>
+                  <button  style="margin-left: 30%;color:black" onclick="my5()">BACK</button>     
+                </div>
+
+
+    <div id="di1" class="main1"  style="display: none; margin-left: 15% ">
+           
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #FFAD0A;
+  color: white;
+}
+.topnav-right {
+  float: right;
+}
+.center {
+	color: Black;
+	 text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 30px;
+	 font-weight: bold;
+}
+.centertable {
+	color: Black;
+	 text-align: center;
+	padding: 20px 29px;
+	text-decoration: none;
+	font-size: 17px;
+	 font-weight: bold;
+}
+.centerdata {
+	color: Black;
+	 text-align: center;
+	padding: 20px 29px;
+	text-decoration: none;
+	font-size: 17px;
+	 font-weight: bold;
+}
+    select {
+		height: 50px;
+        width: 200px;
+        margin: 10px;
+    }
+    select:focus {
+        min-width: 200px;
+        width: auto;
+    }    
+	 input {
+		height: 50px;
+        width: 200px;
+        margin: 10px;
+    }
+    select:focus {
+        min-width: 200px;
+        width: auto;
+    }    
+.button {
+  background-color: #FFAD0A; /* mango */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#my_centered_buttons { justify-content: center; text-align: center; align:center }
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Admin</a>
+  
+  <div class="topnav-right">
+    <a href="#search">Home</a>
+    <a href="#about">About</a>
+	 <a href="#about">Add Menu</a>
+	  <a href="#about">Contact</a>
+  </div>
+</div>
+<br><br><br>
+<div class="center">
+<center>Add Menu</center>
+</div>
+
+<br>
+
+<div class="centerdata">
+Enter New Menu<br> <input type="text" name="New Menu" value="New Menu">
+<br><br>
+Enter Category<br> <input type="text" name="Category" value="Category">
+<br><br>
+Enter Price<br> <input type="text" name="Price" value="Price">
+</div>
+
+<table align="center">
+<tr align="Center"><td>
+ <input class= "button center" type="submit" value="Add Chef" > </td>
+</tr>
+
+</table>
+</body>
+ </div>
+
+<div id="di2"  class="main1" style="display: none; margin-left: 15%">
+                  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .topnav a.active {
+      background-color: #FFAD0A;
+      color: white;
+    }
+    .topnav-right {
+      float: right;
+    }
+    .center {
+      color: Black;
+       text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 30px;
+       font-weight: bold;
+    }
+    .centertable {
+      color: Black;
+       text-align: center;
+      padding: 20px 29px;
+      text-decoration: none;
+      font-size: 17px;
+       font-weight: bold;
+    }
+    .centerdata {
+      color: Black;
+       text-align: center;
+      padding: 20px 29px;
+      text-decoration: none;
+      font-size: 17px;
+       font-weight: bold;
+    }
+        select {
+        height: 50px;
+            width: 200px;
+            margin: 10px;
+        }
+        select:focus {
+            min-width: 200px;
+            width: auto;
+        }    
+       input {
+        height: 50px;
+            width: 200px;
+            margin: 10px;
+        }
+        select:focus {
+            min-width: 200px;
+            width: auto;
+        }    
+    .button {
+      background-color: #FFAD0A; /* mango */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      display:flex;
+      justify-content:center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    #my_centered_buttons { justify-content: center; text-align: center; align:center }
+    </style>
+    </head>
+    <body>
+    
+    <div class="topnav">
+      <a class="active" href="#home">Admin</a>
+      
+      <div class="topnav-right">
+        <a href="#search">Home</a>
+        <a href="#about">About</a>
+       <a href="#about">Add Chef</a>
+        <a href="#about">Contact</a>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="center">
+    <center>Add Chef</center>
+    </div>
+    
+    <br>
+    
+    <table align="center">
+        <tr>
+    <td> <font color = "black" size="6">Chef-id: </font></td>&nbsp;<td><input type= "text"  name="Chef-id"> </td> &nbsp;
+        </tr>
+          <tr>
+    <td> <font color = "black" size="6">First Name: </font></td>&nbsp;<td><input type= "text"  name="First Name"> </td> &nbsp;
+        </tr>
+       <tr>
+    <td> <font color = "black" size="6">Last Name: </font></td>&nbsp;<td><input type= "text"  name="Last Name"> </td> &nbsp;
+        </tr>
+       <tr>
+    <td> <font color = "black" size="6">Mobile Number: </font></td>&nbsp;<td><input type= "text"  name="Mobile Number"> </td> &nbsp;
+        </tr>
+       <tr>
+    <td> <font color = "black" size="6">City: </font></td>&nbsp;<td><input type= "text"  name="City"> </td> &nbsp;
+        </tr>
+       <tr>
+    <td> <font color = "black" size="6">State: </font></td>&nbsp;<td><input type= "text"  name="State"> </td> &nbsp;
+        </tr>
+       <tr>
+    <td> <font color = "black" size="6">County: </font></td>&nbsp;<td><input type= "text"  name="County"> </td> &nbsp;
+        </tr>
+       <tr>
+    <td> <font color = "black" size="6">Pincode: </font></td>&nbsp;<td><input type= "text"  name="Pincode"> </td> &nbsp;
+        </tr>
+       <tr>
+    <td> <font color = "black" size="6">Salary: </font></td>&nbsp;<td><input type= "text"  name="Salary"> </td> &nbsp;
+        </tr>
+    
+        
+        <tr>
+            </tr>
+    <tr align="Center"><td>
+     <input class= "button center" type="submit" value="Add Chef" > </td>
+    </tr>
+    
+    </table>
+    
+
+        </div>
+
+        <div id="di3"  class="main1" style="display: none; margin-left: 15%">
+          <style>
+            body {
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            .topnav {
+              overflow: hidden;
+              background-color: #333;
+            }
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+            .topnav a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            .topnav a.active {
+              background-color: #FFAD0A;
+              color: white;
+            }
+            .topnav-right {
+              float: right;
+            }
+            .center {
+              color: Black;
+               text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 30px;
+               font-weight: bold;
+            }
+            .centertable {
+              color: Black;
+               text-align: center;
+              padding: 20px 29px;
+              text-decoration: none;
+              font-size: 17px;
+               font-weight: bold;
+            }
+            .centerdata {
+              color: Black;
+               text-align: center;
+              padding: 20px 29px;
+              text-decoration: none;
+              font-size: 17px;
+               font-weight: bold;
+            }
+                select {
+                height: 50px;
+                    width: 200px;
+                    margin: 10px;
+                }
+                select:focus {
+                    min-width: 200px;
+                    width: auto;
+                }    
+               input {
+                height: 50px;
+                    width: 200px;
+                    margin: 10px;
+                }
+                select:focus {
+                    min-width: 200px;
+                    width: auto;
+                }    
+                .button {
+      background-color: #FFAD0A; /* mango */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      display:flex;
+      justify-content:center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+            #my_centered_buttons { justify-content: center; text-align: center; align:center }
+            </style>
+            </head>
+            <body>
+            
+            <div class="topnav">
+              <a class="active" href="#home">Admin</a>
+              
+              <div class="topnav-right">
+                <a href="#search">Home</a>
+                <a href="#about">About</a>
+               <a href="#about">Add Table</a>
+                <a href="#about">Contact</a>
+              </div>
+            </div>
+            <br><br><br>
+            <div class="center">
+            <center>Add Table</center>
+            </div>
+            
+            <br>
+            
+            <div class="centerdata">
+            Enter Table Number<br> <input type="text" name="TableNo" value="TableNo">
+            <br><br>
+            Enter Tab Number<br> <input type="text" name="TabNo" value="TabNo">
+            </div>
+            
+            <table align="center">
+            <tr align="Center"><td>
+             <input class= "button center" type="submit" value="Add Table" > </td>
+             
+            </tr>
+            
+            </table>
+  </div>
+
+  <div id="di4"  class="main1" style="display: none; margin-left: 20%">
+                  
+ 
+          <p><b>
+              Feedback occurs when outputs of a system are routed back as inputs as part of a chain of 
+              cause-and-effect that forms a circuit or loop.[2] The system can then be said to feed back
+               into itself. The notion of cause-and-effect has to be handled carefully when applied to feedback 
+               systems:
+              </b>
+          </p>
+          
+</div>
+
+</body>
+</html>

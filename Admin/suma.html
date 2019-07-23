@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css.css">
+
+<!-- <script>
+$(document).ready(function(){
+ 
+  $("#x").click(function(){
+  
+    $("#di1").load("hello.html");
+  
+  });
+});
+</script>
+<script>
+  
+$(document).ready(function(){
+ 
+  ($("#y").click(function(){ 
+    $("#di1").load("hello.html");
+    $("#di2").load("hello2.html");
+  }));
+});
+</script> -->
+<script>
+ function my1(){
+var w= document.getElementById('di1');
+var x= document.getElementById('di2');
+var y= document.getElementById('di3');
+var z= document.getElementById('di4');
+w.style.display="block";
+x.style.display="none";
+y.style.display="none";
+z.style.display="none";
+   }
+function my2(){
+var w= document.getElementById('di1');
+var x= document.getElementById('di2');
+var y= document.getElementById('di3');
+var z= document.getElementById('di4');
+w.style.display="none";
+x.style.display="block";
+y.style.display="none";
+z.style.display="none";
+}
+function my3(){
+var w= document.getElementById('di1');
+var x= document.getElementById('di2');
+var y= document.getElementById('di3');
+var z= document.getElementById('di4');
+w.style.display="none";
+x.style.display="none";
+y.style.display="block";
+z.style.display="none";
+}
+function my4(){
+var w= document.getElementById('di1');
+var x= document.getElementById('di2');
+var y= document.getElementById('di3');
+var z= document.getElementById('di4');
+w.style.display="none";
+x.style.display="none";
+y.style.display="none";
+z.style.display="block";
+}
+function my5(){
+var w= document.getElementById('di1');
+var x= document.getElementById('di2');
+var y= document.getElementById('di3');
+var z= document.getElementById('di4');
+w.style.display="none";
+x.style.display="none";
+y.style.display="none";
+z.style.display="none";
+}
+</script>
+
+</head>
+
+<body>
+
+
+ <!-- Sidebar -->
+<div class="sidenav" style="width:25%">
+ <h3 style="margin-left: 10%">Menu</h3>
+
+    <button  style="margin-left: 10%" onclick="my1()">Add Menu</button>  <br><br>
+    <button  style="margin-left: 10%" onclick="my2()">Add Chef</button><br><br>    
+    <button  style="margin-left: 10%" onclick="my3()">Add Table</button>   <br><br> 
+    <button  style="margin-left: 10%" onclick="my4()">View feedback</button><br><br>      
+ </div>
+
+<div  style="margin-left:11.5%">
+
+                <div style="margin-left: 15%; margin-top: 0%"   class="main">
+                  <b style="margin-left: 35%; font-size: 4rem;">Admin</b>
+                  <button  style="margin-left: 30%" onclick="my5()">BACK</button>     
+                </div>
+
+
+        <div id="di1" class="main1"  style="display: none; margin-left: 15% ">
+                <form name="MY Form"action="Login">
+                    userid<input type="text"name="text1">
+                    <br>password<input typy="password" name="text2">
+                    <br>
+                    <input type="submit"name="button1"value="login">
+                    </form>
+                  </div>
+
+
+
+
+                  <div id="di2"  class="main1" style="display: none; margin-left: 15%">
+
+                  <form name="MY Form"action="Login">
+                      PKC<input type="text"name="text1">
+                       <br>password<input typy="password" name="text2">
+                       <br>
+                       <input type="submit"name="button1"value="login">
+                       </form>
+                      </div>
+        </div>
+
+        <div id="di3"  class="main1" style="display: none; margin-left: 25%">
+
+            <form name="MY Form"action="Login">
+                PKC<input type="text"name="text1"><br><br>
+                PKC<input type="text"name="text1"><br><br>
+                PKC<input type="text"name="text1"><br><br>
+                password<input typy="password" name="text2">
+                 <br><br>
+                 <input type="submit"name="button1"value="login">
+                 </form>
+                </div>
+  </div>
+
+  <div id="di4"  class="main1" style="display: none; margin-left: 25%">
+
+      <form name="MY Form"action="Login">
+          <p><b>
+              Feedback occurs when outputs of a system are routed back as inputs as part of a chain of 
+              cause-and-effect that forms a circuit or loop.[2] The system can then be said to feed back
+               into itself. The notion of cause-and-effect has to be handled carefully when applied to feedback 
+               systems:
+              </b>
+          </p>
+          </div>
+</div>
+
+</body>
+</html>
