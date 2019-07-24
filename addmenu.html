@@ -1,8 +1,12 @@
+<!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://www.springframework.org/tags/form" prefix="spr" %> -->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>DTS - Digital Table Service</title>
-    <meta charset="utf-8">
+<html>
+<head>
+<meta charset="ISO-8859-1">
+   <title>DTS -Update menu</title>
+  
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -34,7 +38,7 @@
 
 
 	    <div class="container">
-	      
+	      <a class="navbar-brand" href="index.html">Digital table service</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -42,12 +46,9 @@
       
           <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-              <li class="nav-item active"><a href="menu.html" class="nav-link">Add Menu</a></li>
+              <li class="nav-item"><a href="index.jsp" class="nav-link">Home</a></li>
+              <li class="nav-item active"><a href="index.html" class="nav-link">LogOut</a></li> 
               
-              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-         
             </ul>
           </div>
         </div>
@@ -65,37 +66,95 @@
               <div class="heading-section ftco-animate mb-5">
                 <h2 class="mb-4">Add Menu</h2>
               </div>
-              <form action="#">
+              <spr:form action="insertmenu.htm" commandName="menu">
                 <div class="row">
-				      <div class="form-group">
-                
-                   
-                      <label for="">Enter new Menu</label>
-                      <input type="text" class="form-control" placeholder="New Menu">
-         
-                
-                 
-                
-                      <label for="">Enter Category</label>
-                      <input type="text" class="form-control" placeholder="Category">
-                   
-         
-                
-                      <label for="">Price</label>
-                      <input type="text" class="form-control" placeholder="Price">
-                    
-      
-                  
-                   
-                      
-                  </div>
-                  <div class="col-md-12 mt-3">
+				 <div class="col-md-6">
                     <div class="form-group">
-                      <input type="submit" value="Add Menu" class="btn btn-primary py-3 px-5">
+                      <label for="">menu id</label>
+                      <!-- <spr:input type="number" class="form-control" placeholder="Menu Id" path="menuId"/> -->
+                      <input type="number" class="form-control" placeholder="Menu Id" path="menuId"/>
+
                     </div>
+                    </div>
+                    </div>
+				 
+				    <div class="row">
+				     <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="">Menu Name</label>
+                      <!-- <spr:input type="text" class="form-control" placeholder="Menu Name" path="menuName"/> -->
+                      <input type="text" class="form-control" placeholder="Menu Name" path="menuName"/>
+
+                    </div>
+                    </div>
+                    
+                     <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="">select Category</label>
+                      <div class="select-wrap one-third">
+                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                        <select name="" id="" class="form-control" >
+                          <option value="">Category</option>
+                          <option value="">veg</option>
+                          <option value="">Non-veg</option>
+                          
+                        </select>
+                      </div>
+                    </div>
+                    </div>
+                    
+                     
+                    
+                     <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="">price half</label>
+                      <!-- <spr:input type="text" class="form-control" placeholder="price Half" path="priceHalf"/> -->
+                      <input type="text" class="form-control" placeholder="price Half" path="priceHalf"/>
+
+                    </div>
+                    </div>
+                    
+                     <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="">price Full</label>
+                      <!-- <spr:input type="text" class="form-control" placeholder="price Full" path="priceFull"/> -->
+                      <input type="text" class="form-control" placeholder="price Full" path="priceFull"/>
+
+                    </div>
+                    </div>
+                    
+                     <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="">Time for preparation</label>
+                      <!-- <spr:input type="text" class="form-control" placeholder="Time For Preparation" path="timeForPreparation"/> -->
+                      <input type="text" class="form-control" placeholder="Time For Preparation" path="timeForPreparation"/>
+
+                    </div>
+                    </div>
+                    
+                     <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="">add On Time</label>
+                      <input type="text" class="form-control" placeholder="add On Time" path="addOnTime"/>
+
+                      <!-- <spr:input type="text" class="form-control" placeholder="add On Time" path="addOnTime"/> -->
+                    </div>
+                    </div>
+                    
+                    				                
+                 
+                  <div class="col-md-12 mt-3 d-flex">
+				   <div class="col-md-6 mr-4 ">
+				  <div class="form-group">
+                      <input type="submit" value="Update" class="btn btn-primary py-3 px-5">
+					</div>
+                    </div>
+					</div>
+					
                   </div>
+                   </spr:form>
                 </div>
-              </form>
+             
             </div>
 
           </div>
@@ -110,10 +169,10 @@
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container-fluid px-md-5 px-3">
         <div class="row mb-5">
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-4">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Appetizer</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="ftco-heading-2">Digital Table Service</h2>
+              <p>Is price and quality a priority for you? Then this is the ideal offer for you.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -121,35 +180,24 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-4">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Open Hours</h2>
               <ul class="list-unstyled open-hours">
-                <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
-                <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
-                <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
-                <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
-                <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
-                <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
-                <li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+               <li class="d-flex"><span>Monday</span><span>9:00 AM - 12:00 AM</span></li>
+                <li class="d-flex"><span>Tuesday</span><span>9:00 AM - 12:00 AM</span></li>
+                <li class="d-flex"><span>Wednesday</span><span>9:00 AM - 12:00 AM</span></li>
+                <li class="d-flex"><span>Thursday</span><span>9:00 AM - 12:00 AM</span></li>
+                <li class="d-flex"><span>Friday</span><span>9:00 AM - 12:00 AM</span></li>
+                <li class="d-flex"><span>Saturday</span><span>9:00 AM - 12:00 AM</span></li>
+                <li class="d-flex"><span>Sunday</span><span> 9:00 AM - 12:00 AM</span></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Newsletter</h2>
-            	<p>Far far away, behind the word mountains, far from the countries.</p>
-              <form action="#" class="subscribe-form">
-                <div class="form-group">
-                  <input type="text" class="form-control mb-2 text-center" placeholder="Enter email address">
-                  <input type="submit" value="Subscribe" class="form-control submit px-3">
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
+         
+          <div class="col-md-6 col-lg-4">
              <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Instagram</h2>
+              <h2 class="ftco-heading-2">Photo's</h2>
               <div class="thumb d-sm-flex">
 	            	<a href="#" class="thumb-menu img" style="background-image: url(images/insta-1.jpg);">
 	            	</a>
@@ -173,7 +221,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">DTS Team</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
